@@ -1,22 +1,52 @@
 <div class="text-layout">
-	<h1>Basic Pipes</h1>
-	<p>Pipes included in Angular - Usually in the Common Module</p>
+  <h1>Basic Pipes</h1>
+  <p>Pipes included in Angular - Usually in the Common Module</p>
 </div>
 
 <div class="p-grid">
-	<div class="p-col-4">
-		<p-card header="uppercase" [subheader]="nameLower">
-			{{nameLower | uppercase}}
-		</p-card>
-	</div>
-	<div class="p-col-4">
-		<p-card header="lowercase" [subheader]="nameUpper">
-			{{nameUpper | lowercase}}
-		</p-card>
-	</div>
-	<div class="p-col-4">
-		<p-card header="titlecase" [subheader]="fullName">
-			{{fullName | titlecase}}
-		</p-card>
-	</div>
+  <div class="p-col-4">
+    <p-card header="uppercase" [subheader]="nameLower">
+      {{ nameLower | uppercase }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="lowercase" [subheader]="nameUpper">
+      {{ nameUpper | lowercase }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="titlecase" [subheader]="fullName">
+      {{ fullName | titlecase }}
+    </p-card>
+  </div>
+</div>
+
+<div class="text-layout">
+  <h1>Date Pipes</h1>
+  <p>Pipe to show the dates</p>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-6">
+    <p-card>
+      <ul>
+        <li>date</li>
+        <li>date | date</li>
+        <li>date | date:'short'</li>
+        <li>date | date:'long'</li>
+        <li>date | date:'G E-dd/MMMM/yy H:mm'</li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="p-col-6">
+    <p-card>
+      <ul>
+        <li>{{ date }}</li>
+        <li>{{ date | date }}</li>
+        <li>{{ date | date:'short' }}</li>
+        <li>{{ date | date:'long' }}</li>
+        <li>{{ date | date:'G E-dd/MMMM/yy H:mm' }}</li>
+      </ul>
+    </p-card>
+  </div>
 </div>
