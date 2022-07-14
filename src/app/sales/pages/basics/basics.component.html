@@ -5,14 +5,18 @@
 
 <div class="p-grid">
 	<div class="p-col-4">
-		<p-card header="uppercase">
-			
+		<p-card header="uppercase" [subheader]="nameLower">
+			{{nameLower | uppercase}}
 		</p-card>
 	</div>
 	<div class="p-col-4">
-		2
+		<p-card header="lowercase" [subheader]="nameUpper">
+			{{nameUpper | lowercase}}
+		</p-card>
 	</div>
 	<div class="p-col-4">
-		3
+		<p-card header="titlecase" [subheader]="fullName">
+			{{fullName | titlecase}}
+		</p-card>
 	</div>
 </div>

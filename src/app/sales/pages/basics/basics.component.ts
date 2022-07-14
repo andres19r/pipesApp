@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basics.component.css']
 })
 export class BasicsComponent implements OnInit {
+  nameLower: string = 'andres'
+  nameUpper: string = 'ANDRES'
+  fullName: string = 'aNdReS riVEro'
 
   constructor() { }
 
