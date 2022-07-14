@@ -9,8 +9,10 @@ import { SalesModule } from './sales/sales.module';
 
 // change the app local
 import localeEs from '@angular/common/locales/es-AR'
+import localeFr from '@angular/common/locales/fr'
 import { registerLocaleData } from '@angular/common'
 registerLocaleData(localeEs);
+registerLocaleData(localeFr);
 
 @NgModule({
   declarations: [AppComponent],
