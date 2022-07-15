@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./no-commons.component.css']
 })
 export class NoCommonsComponent implements OnInit {
+  name: string = 'Andrés'
+  gender: string = 'male'
+  invitationMap = {
+    'male': 'invitarlo',
+    'female': 'invitarla',
+  }
 
   constructor() { }
 

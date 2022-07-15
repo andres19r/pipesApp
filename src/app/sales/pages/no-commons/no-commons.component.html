@@ -6,7 +6,9 @@
 <div class="p-grid">
   <div class="p-col p-md-6">
     <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
-      Content
+      Saludos {{name}}, es un placer 
+      {{ gender | i18nSelect:invitationMap }}
+       a nuestro evento.
     </p-fieldset>
   </div>
 
