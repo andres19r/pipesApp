@@ -15,7 +15,7 @@ export class NoCommonsComponent implements OnInit {
   }
 
   // i18nPlural
-  clients: string[] = ['Maria', 'Pedro', 'Juan']
+  clients: string[] = ['Maria', 'Pedro', 'Juan', 'John', 'Susan']
   clientsMap = {
     '=0': 'no tenemos ningun cliente esperando.',
     '=1': 'tenemos un cliente esperando.',
@@ -28,4 +28,12 @@ export class NoCommonsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changePerson(): void {
+    this.name = this.name === 'Andrés' ? 'María' : 'Andrés'
+    this.gender = this.gender === 'male' ? 'female' : 'male'
+  }
+
+  deleteClient(): void {
+    this.clients.pop()
+  }
 }
