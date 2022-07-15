@@ -10,4 +10,16 @@
       {{ netSales | number: "1.2-2" }}
     </p-card>
   </div>
+
+  <div class="p-col-4">
+    <p-card header="Gross sales" subheader="of the present year">
+      {{ netSales + 2000000 | currency:'USD':'symbol-narrow':'1.4-4' }}
+    </p-card>
+  </div>
+
+  <div class="p-col-4">
+    <p-card header="Percentage profit" subheader="of the present year">
+      {{ percentage | percent:'2.2-2' }}
+    </p-card>
+  </div>
 </div>
