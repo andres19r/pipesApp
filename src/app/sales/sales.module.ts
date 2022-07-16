@@ -8,6 +8,7 @@ import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { SortComponent } from './pages/sort/sort.component';
 import { CapitalLettersPipe } from './pipes/capital-lettes.pipe';
+import { FliesPipe } from './pipes/flies.pipe';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CapitalLettersPipe } from './pipes/capital-lettes.pipe';
     NoCommonsComponent,
     BasicsComponent,
     SortComponent,
-    CapitalLettersPipe
+    CapitalLettersPipe,
+    FliesPipe
   ],
   imports: [
     CommonModule,
