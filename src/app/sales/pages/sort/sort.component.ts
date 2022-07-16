@@ -15,6 +15,7 @@ export class SortComponent implements OnInit {
     { name: 'Daredevil', fly: false, color: Color.red },
     { name: 'Green Lantern', fly: true, color: Color.green },
   ];
+  sortBy: string = 'no value'
 
   constructor() {}
 
@@ -23,4 +24,9 @@ export class SortComponent implements OnInit {
   toggleUpper(): void {
     this.inUpper = !this.inUpper;
   }
+
+  changeOrder(value: string): void {
+    this.sortBy = value
+  }
+
 }
