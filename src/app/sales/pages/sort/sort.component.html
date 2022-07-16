@@ -1,4 +1,11 @@
 <div class="text-layout">
-	<h1>Custom Pipes</h1>
-	<p>Pipes created by {{ 'us' | capitalLetters }}</p>
+  <h1>Custom Pipes</h1>
+  <p>Pipes {{ "created" | capitalLetters: inUpper }} by us</p>
+
+  <button
+    pButton
+    type="button"
+    label="Toggle Upper"
+    (click)="toggleUpper()"
+  ></button>
 </div>

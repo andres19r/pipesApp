@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sort.component.css']
 })
 export class SortComponent implements OnInit {
+  inUpper: boolean = true
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleUpper(): void {
+    this.inUpper = !this.inUpper
+  }
 }
